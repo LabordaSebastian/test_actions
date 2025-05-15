@@ -102,13 +102,6 @@ jobs:
       with:
         webhook: ${{ secrets.DISCORD_WEBHOOK }}
         message: "🚀 FastAPI desplegado en servidor local tras merge en develop."
-
-    - name: Notify on Telegram
-      uses: appleboy/telegram-action@master
-      with:
-        to: ${{ secrets.TELEGRAM_TO }}
-        token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: "✅ FastAPI actualizado automáticamente tras merge en develop."
 ```
 
 ---
